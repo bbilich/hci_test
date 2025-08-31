@@ -1,10 +1,16 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="relative w-full">
-      <img src="/hero.jpg" alt="hero image" />
+      <Image
+        src="/hero.jpg" 
+        alt="hero picture" 
+        height={500}
+        width={700}
+        className="w-full h-auto"/>
 
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 gap-5 text-center">
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-semibold md:-mt-15 tracking-wide text-beige-900">

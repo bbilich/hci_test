@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type DescProps = {
   children: string;
@@ -26,7 +27,13 @@ const About = () => {
                         u našem studiju ili u toplini vašeg doma, 
                         prilagođavamo se vama kako biste se osjećali prirodno i opušteno pred objektivom.
                     </Description>
-                    <img src="/about1.jpg" alt="pregnancy photoshoot" className="w-full md:w-1/2 h-auto"/>
+
+                    <Image
+                        src="/about1.jpg" 
+                        alt="pregnancy photoshoot" 
+                        height={500}
+                        width={700}
+                        className="w-full md:w-1/2 h-auto"/>
                 </div>
 
                 <div className="flex justify-between flex-col md:flex-row gap-8 py-10">
@@ -38,7 +45,12 @@ const About = () => {
                         važno profesionalno predstaviti brend kroz fotografiju.
                     </Description>
 
-                    <img src="/about2.jpg" alt="pregnancy photoshoot" className="w-full md:w-1/2 h-auto"/>
+                    <Image
+                        src="/about2.jpg" 
+                        alt="studio photoshoot" 
+                        height={600}
+                        width={700}
+                        className="w-full md:w-1/2 h-auto"/>
                 </div>
 
                 <div className="flex justify-between flex-col md:flex-row gap-8 pb-20">
@@ -49,7 +61,12 @@ const About = () => {
                         a naša uloga je da ih uhvatimo upravo takvima kakvi jesu – iskreni, stvarni i nezaboravni.
                     </Description>
 
-                    <img src="/about3.jpg" alt="pregnancy photoshoot" className="w-full md:w-1/2 h-auto"/>
+                    <Image
+                        src="/about3.jpg" 
+                        alt="outdoor family photoshoot" 
+                        height={500}
+                        width={700}
+                        className="w-full md:w-1/2 h-auto"/>
                 </div>
 
                 <div className="bg-beige-50 flex flex-col items-center text-center px-10 py-10 gap-6">
